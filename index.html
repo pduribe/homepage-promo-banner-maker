@@ -1,0 +1,234 @@
+<!-- PS Promo Banner (Generated) -->
+<div class="ps-promo" role="region" aria-label="Promotional message">
+    <div class="ps-promo__inner">
+      <div class="ps-promo__pre ">EXTENDED!</div>
+      <div class="ps-promo__main">
+        <div class="ps-promo__mainLine">
+          
+          <span class="ps-promo__offer  ">EXTRA 30% OFF</span>
+        </div>
+        <div class="ps-promo__postLine"><span class="ps-promo__post  ">Sitewide</span><span class="ps-promo__afterPost is-bold ">USE CODE: EXTRA30</span></div>
+      </div>
+      <div class="ps-promo__ctas" aria-label="Promotional links">
+            <a class="ps-promo__cta" href="#">SHOP MEN</a><a class="ps-promo__cta" href="#">SHOP WOMEN</a><a class="ps-promo__cta" href="#">SHOP KIDS</a>
+          </div>
+    </div>
+  </div>
+  
+  <style>
+    .ps-promo{
+      --promo-bg: #D1D1D1;
+      --promo-fg: #000;
+  
+      --pre-color: #000;
+      --prefix-color: #000;
+      --offer-color: #000;
+      --post-color: #000;
+      --afterpost-color: #000;
+      --cta-color: #000;
+  
+      --w-regular: 400;
+      --w-medium: 500;
+      --w-semibold: 600;
+      --w-bold: 700;
+  
+      background: var(--promo-bg);
+      color: var(--promo-fg);
+      width: 100%;
+      font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  
+      /* Mobile ratio baseline height (828x258). */
+      --h: calc(258 * 100vw / 828);
+      min-height: var(--h);
+      height: auto;
+  
+      display:flex;
+      align-items:center;
+    }
+  
+    @media (min-width: 768px){
+      .ps-promo{
+        /* Desktop ratio baseline height (2880x288). */
+        --h: calc(288 * 100vw / 2880);
+        min-height: var(--h);
+      }
+    }
+  
+    .ps-promo__inner{
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+  
+      padding: calc(var(--h) * 0.06) calc(var(--h) * 0.08);
+      gap: calc(var(--h) * 0.03);
+  
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    /* ===== MOBILE COEFFICIENTS ===== */
+    .ps-promo__pre{
+      color: var(--pre-color);
+      font-size: calc(var(--h) * 0.1240);
+      line-height: 1;
+      letter-spacing: 0;
+      font-weight: var(--w-semibold);
+    }
+  
+    .ps-promo__main{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      gap: calc(var(--h) * 0.02);
+    }
+  
+    /* Prefix + Offer ALWAYS inline (mobile + desktop) */
+    .ps-promo__mainLine{
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: calc(var(--h) * 0.03);
+    }
+  
+    .ps-promo__prefix{
+      color: var(--prefix-color);
+      font-size: calc(var(--h) * 0.1550);
+      line-height: 1;
+      letter-spacing: -0.05em;
+      font-weight: var(--w-semibold);
+      white-space: nowrap;
+    }
+  
+    .ps-promo__offer{
+      color: var(--offer-color);
+      font-size: calc(var(--h) * 0.3885);
+      line-height: 1;
+      letter-spacing: -0.05em;
+      font-weight: var(--w-medium);
+      white-space: nowrap;
+    }
+  
+    /* Post + After-post are SAME LINE on mobile */
+    .ps-promo__postLine{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      gap: calc(var(--h) * 0.03);
+    }
+  
+    .ps-promo__post{
+      color: var(--post-color);
+      font-size: calc(var(--h) * 0.1741);
+      line-height: 1;
+      letter-spacing: -0.07em;
+      font-weight: var(--w-regular);
+      white-space: nowrap;
+    }
+  
+    /* After-post uses PREFIX styling */
+    .ps-promo__afterPost{
+      color: var(--afterpost-color);
+      font-size: calc(var(--h) * 0.1550);
+      line-height: 1;
+      letter-spacing: -0.05em;
+      font-weight: var(--w-semibold);
+      white-space: nowrap;
+    }
+  
+    .ps-promo .is-bold{ font-weight: var(--w-bold) !important; }
+  
+    /* Asterisk marker (top-right) */
+    .ps-promo__prefix,
+    .ps-promo__offer,
+    .ps-promo__post,
+    .ps-promo__afterPost{
+      position: relative;
+    }
+    .ps-promo .has-asterisk::after{
+      content: "*";
+      position: absolute;
+      top: -0.15em;
+      right: -0.35em;
+      font-size: 0.35em;
+      line-height: 1;
+      font-weight: inherit;
+    }
+    .ps-promo__offer.has-asterisk::after{
+      top: -0.10em;
+      right: -0.25em;
+    }
+  
+    .ps-promo__ctas{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content:center;
+      align-items:center;
+      gap: calc(var(--h) * 0.2);
+      margin-top: calc(var(--h) * 0.01);
+    }
+    .ps-promo__cta{
+      color: var(--cta-color);
+      font-size: calc(var(--h) * 0.1240);
+      font-weight: var(--w-semibold);
+      line-height: 1.2;
+      letter-spacing: 0;
+      text-decoration: underline;
+      text-underline-offset: 0.08em;
+      white-space: nowrap;
+    }
+  
+    /* ===== DESKTOP OVERRIDES ===== */
+    @media (min-width: 768px){
+      .ps-promo__pre{
+        font-size: calc(var(--h) * 0.1111);
+      }
+  
+      /* Desktop: postLine sits inline with offer row and centered vertically */
+      .ps-promo__main{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: calc(var(--h) * 0.06);
+      }
+  
+      .ps-promo__mainLine{
+        align-items: center;
+        gap: calc(var(--h) * 0.06);
+      }
+  
+      .ps-promo__postLine{
+        align-items: center;
+        gap: calc(var(--h) * 0.06);
+        margin: 0;
+      }
+  
+      .ps-promo__prefix{
+        font-size: calc(var(--h) * 0.2318);
+        letter-spacing: -0.05em;
+        line-height: 1;
+      }
+      .ps-promo__offer{
+        font-size: calc(var(--h) * 0.4884);
+        letter-spacing: -0.05em;
+        line-height: 1;
+      }
+      .ps-promo__post{
+        font-size: calc(var(--h) * 0.4884);
+        letter-spacing: -0.05em;
+        line-height: 1;
+      }
+      .ps-promo__afterPost{
+        font-size: calc(var(--h) * 0.2318); /* same as desktop prefix */
+        letter-spacing: -0.05em;
+        line-height: 1;
+      }
+  
+      .ps-promo__cta{
+        font-size: calc(var(--h) * 0.1111);
+        line-height: calc(var(--h) * 0.1667);
+      }
+    }
+  </style>
